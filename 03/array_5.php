@@ -13,11 +13,10 @@ $life = [
 ];
 
 // 以下のXXXXXを修正
-// $study = $life['study'][0];
-// $club = $life[0];
+$study = $life['study']['国語'][1].'、'.$life['study']['理科'][0]. '、'. $life['study']['社会'][0];
+$club = $life['club']['運動部'][2] . '、' . $life['club']['文化部'][0];
 
-$study = '古文、物理、日本史';
-$club = 'バレー部と茶道部';
+// $club = 'バレー部と茶道部';
 
 
 
