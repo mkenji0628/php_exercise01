@@ -8,9 +8,9 @@ $foods = [
 echo '私は' . '<br>';
 
 foreach ($foods as $key => $food) {
-    echo $key.'に'.$food . '<br>';
+    echo $key . 'に' . $food . '<br>';
 }
-    echo 'を食べます';
+echo 'を食べます';
 
 
 // print $key . '=>' . $value . '<br />'
