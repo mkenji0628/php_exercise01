@@ -1,12 +1,8 @@
 <?php
 
 $subjects = ['数学', '英語', '理科', '社会', '国語'];
-// $subject = '国語';
-// echo $subject;
 
 foreach ($subjects as $subject) {
-    // echo $subject.'<br>';
-
 
     switch ($subject) {
         case '数学':

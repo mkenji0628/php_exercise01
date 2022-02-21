@@ -11,6 +11,3 @@ foreach ($foods as $key => $food) {
     echo $key . 'に' . $food . '<br>';
 }
 echo 'を食べます';
-
-
-// print $key . '=>' . $value . '<br />'

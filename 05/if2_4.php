@@ -1,36 +1,21 @@
 <?php
 
-$score = 100;
+$blood_type = 'O';
 
-switch ($score) {
-    case '100':
-        echo 'あなたのテストの点数は' . $score . '点で、判定はＡです。';
+switch ($blood_type) {
+    case 'A':
+        echo $blood_type . '型の方は几帳面だけど優しいらしいです！';
         break;
-    case '99':
-        echo 'あなたのテストの点数は' . $score . '点で、判定はＡです。';
+    case 'B':
+        echo $blood_type . '型の方は好奇心旺盛らしいです！';
         break;
-    case '98':
-        echo 'あなたのテストの点数は' . $score . '点で、判定はＡです。';
+    case 'AB':
+        echo $blood_type . '型の方は先読み思考に優れた天才らしいです！ ';
         break;
-    case '97':
-        echo 'あなたのテストの点数は' . $score . '点で、判定はＡです。';
-        break;
-    case '96':
-        echo 'あなたのテストの点数は' . $score . '点で、判定はＡです。';
-        break;
-    case '95':
-        echo 'あなたのテストの点数は' . $score . '点で、判定はＡです。';
-        break;
-    case '83':
-        echo 'あなたのテストの点数は' . $score . '点で、判定はＢです。';
-        break;
-    case '79':
-        echo 'あなたのテストの点数は' . $score . '点で、判定はＣです。';
-        break;
-    case '63':
-        echo 'あなたのテストの点数は' . $score . '点で、判定はＤです。';
+    case 'O':
+        echo $blood_type . '型の方はおおらからしいです！';
         break;
     default:
-        echo 'あなたのテストの点数は' . $score . '点で、判定はＦです。';
+        echo '判定不能です！';
         break;
 }
