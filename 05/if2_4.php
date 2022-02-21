@@ -1,6 +1,6 @@
 <?php
 
-$blood_type = 'O';
+$blood_type = 'A';
 
 switch ($blood_type) {
     case 'A':
