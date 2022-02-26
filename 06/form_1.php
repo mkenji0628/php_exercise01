@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="submit" value="送信">
         </div>
     </form>
-    <p><?= htmlspecialchars('私は' . $msg . '歳です。') ?></p>
+    <p><?= htmlspecialchars('私は' . $msg . '歳です。',ENT_QUOTES, 'UTF-8') ?></p>
 </body>
 
 </html>
