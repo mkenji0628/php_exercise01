@@ -7,7 +7,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $msg = $_POST['message'];
 
     if (empty($msg)) {
-        $err_msg = '未入力です';
+        $err_msg = '年齢を入力してください。';
+    } else {
+        $msg = '私は' . $msg . '歳です。';
     }
 }
 
@@ -24,9 +26,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
-    <h1>1POSTメソッド</h1>
+    <h1>POSTメソッド</h1>
     <form action="" method="POST">
         <div>
+            <?php if ($err_msg) : ?>
+                <ul>
+                    <li><?= $err_msg ?></li>
+                </ul>
+            <?php endif; ?>
+
             <label for="">年齢</label><br>
             <input type="text" name="message">
         </div>
@@ -34,7 +42,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="submit" value="送信">
         </div>
     </form>
-    <p><?= htmlspecialchars('私は' . $msg . '歳です。', ENT_QUOTES, 'UTF-8') ?></p>
+    <?php if (!empty($msg)) : ?>
+        <p><?= htmlspecialchars($msg, ENT_QUOTES, 'UTF-8') ?></p>
+    <?php endif; ?>
 </body>
-
 </html>
