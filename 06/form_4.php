@@ -30,9 +30,8 @@ switch ($_GET['operator']) {
         $_GET['num2'] = '';
         $kigou = '';
         $tougou = '';
-        echo '正しい演算子を指定して下さい';
+        echo '正しい演算子を指定して下さい。';
         break;
 }
 
-
-echo $_GET['num1'] . $kigou . $_GET['num2'] . $tougou . $ans;
+echo $_GET['num1'] .' '. $kigou . ' ' . $_GET['num2'] . ' ' . $tougou . ' ' . $ans;
