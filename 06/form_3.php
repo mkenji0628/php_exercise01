@@ -46,4 +46,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p><?= htmlspecialchars($msg, ENT_QUOTES, 'UTF-8') ?></p>
     <?php endif; ?>
 </body>
+
 </html>

@@ -33,4 +33,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p><?= htmlspecialchars('私は' . $msg . '歳です。', ENT_QUOTES, 'UTF-8') ?></p>
     <?php endif; ?>
 </body>
+
 </html>
