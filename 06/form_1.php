@@ -23,12 +23,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div>
             <label for="">年齢</label><br>
             <input type="text" name="message">
+
         </div>
         <div>
             <input type="submit" value="送信">
         </div>
     </form>
-    <p><?= htmlspecialchars('私は' . $msg . '歳です。',ENT_QUOTES, 'UTF-8') ?></p>
+    <?php if (!empty($msg)) : ?>
+        <p><?= htmlspecialchars('私は' . $msg . '歳です。', ENT_QUOTES, 'UTF-8') ?></p>
+    <?php endif; ?>
 </body>
-
 </html>
